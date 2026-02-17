@@ -1,2 +1,14 @@
-cache/
-out/
+# Foundry
+cache
+out
+broadcast
+lib/openzeppelin-contracts
+
+# Node
+node_modules
+.env
+.DS_Store
+
+# Temp files
+forge_output.txt
+forge_help.txt
