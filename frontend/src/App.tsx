@@ -32,7 +32,7 @@ function App() {
             🐳 Orca Staking
           </h1>
           <p className="text-sm text-gray-500">
-            Stake ETH • Earn Rewards • Secure Smart Contract
+            Stake Sapolia ETH • Earn Rewards • Secure Smart Contract
           </p>
         </div>
         <ConnectKitButton />
@@ -47,7 +47,7 @@ function App() {
               Welcome to Orca Staking
             </h2>
             <p className="text-gray-600">
-              Connect your wallet to start staking ETH and earning passive rewards securely on-chain.
+              Connect your wallet to start staking Sapolia ETH and earning passive rewards securely on-chain.
             </p>
           </div>
         ) : (
