@@ -1,0 +1,30 @@
+
+> frontend@0.0.0 build
+> tsc -b && vite build
+
+[36mvite v7.3.1 [32mbuilding client environment for production...[36m[39m
+transforming...
+[plugin vite:resolve] Module "events" has been externalized for browser compatibility, imported by "D:/cohort_3/week_23/frontend/node_modules/family/lib/sdk.js". See https://vite.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibility for more details.
+[plugin vite:resolve] Module "events" has been externalized for browser compatibility, imported by "D:/cohort_3/week_23/frontend/node_modules/family/lib/family-accounts-connector-JRsEYbpv.js". See https://vite.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibility for more details.
+[32mΓ£ô[39m 1952 modules transformed.
+Γ£ù Build failed in 3.01s
+error during build:
+node_modules/family/lib/family-accounts-connector-JRsEYbpv.js (2:9): "EventEmitter" is not exported by "__vite-browser-external", imported by "node_modules/family/lib/family-accounts-connector-JRsEYbpv.js".
+file: D:/cohort_3/week_23/frontend/node_modules/family/lib/family-accounts-connector-JRsEYbpv.js:2:9
+
+1: import { getAddress, createWalletClient, custom, publicActions, SwitchChainError, numberToHex, UserRejectedRequestErr...
+2: import { EventEmitter } from 'events';
+            ^
+3: 
+4: /*
+
+    at getRollupError (file:///D:/cohort_3/week_23/frontend/node_modules/rollup/dist/es/shared/parseAst.js:402:41)
+    at error (file:///D:/cohort_3/week_23/frontend/node_modules/rollup/dist/es/shared/parseAst.js:398:42)
+    at Module.error (file:///D:/cohort_3/week_23/frontend/node_modules/rollup/dist/es/shared/node-entry.js:17040:16)
+    at Module.traceVariable (file:///D:/cohort_3/week_23/frontend/node_modules/rollup/dist/es/shared/node-entry.js:17452:29)
+    at ModuleScope.findVariable (file:///D:/cohort_3/week_23/frontend/node_modules/rollup/dist/es/shared/node-entry.js:15070:39)
+    at ChildScope.findVariable (file:///D:/cohort_3/week_23/frontend/node_modules/rollup/dist/es/shared/node-entry.js:5673:38)
+    at ClassBodyScope.findVariable (file:///D:/cohort_3/week_23/frontend/node_modules/rollup/dist/es/shared/node-entry.js:5673:38)
+    at ChildScope.findVariable (file:///D:/cohort_3/week_23/frontend/node_modules/rollup/dist/es/shared/node-entry.js:5673:38)
+    at Identifier.bind (file:///D:/cohort_3/week_23/frontend/node_modules/rollup/dist/es/shared/node-entry.js:5447:40)
+    at NewExpression.bind (file:///D:/cohort_3/week_23/frontend/node_modules/rollup/dist/es/shared/node-entry.js:2829:23)
